@@ -51,6 +51,12 @@ gem "bootsnap", ">= 1.4.4", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Devise is a flexible authentication solution for Rails based on Warden
+# NOTE: Currently, the last "devise" release is "v4.8.0". This version doesn't support rails v7.
+#       The github version supports rails v7.
+gem "devise", github: "heartcombo/devise"
+gem "devise-i18n"
+
 group :development, :test do
   # See https://edgeguides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
