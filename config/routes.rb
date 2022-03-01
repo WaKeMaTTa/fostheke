@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root to: "home#index"
+
+  # User account routes
+  devise_for :users
 end
